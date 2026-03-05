@@ -1,17 +1,22 @@
-buildscript {
-    repositories {
+buildscript { 
+    repositories { 
+        maven { 
+            url('/opt/android-plugin')
+        }
         google()
         mavenCentral()
         gradlePluginPortal()
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.13.1'
-        classpath 'com.google.gms:google-services:4.4.4'
+    dependencies { 
+        classpath('com.android.tools.build:gradle:7.4.0-dev')
+        classpath('com.google.gms:google-services:4.4.4')
     }
 }
-
-allprojects {
-    repositories {
+allprojects { 
+    repositories { 
+        maven { 
+            url('/opt/android-plugin')
+        }
         google()
         mavenCentral()
     }
